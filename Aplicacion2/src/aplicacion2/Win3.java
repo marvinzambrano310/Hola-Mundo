@@ -28,6 +28,7 @@ public class Win3 extends javax.swing.JFrame {
     private void initComponents() {
 
         Btn1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,19 +39,25 @@ public class Win3 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Esta en el Formulario 3");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(137, 137, 137)
-                .addComponent(Btn1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(Btn1))
                 .addContainerGap(152, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(127, 127, 127)
+                .addGap(73, 73, 73)
+                .addComponent(jLabel1)
+                .addGap(40, 40, 40)
                 .addComponent(Btn1)
                 .addContainerGap(150, Short.MAX_VALUE))
         );
@@ -102,5 +109,6 @@ public class Win3 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn1;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
