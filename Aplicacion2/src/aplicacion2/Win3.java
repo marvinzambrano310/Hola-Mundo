@@ -32,6 +32,11 @@ public class Win3 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Btn1.setText("Ir al Formulario1");
+        Btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -52,6 +57,13 @@ public class Win3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn1ActionPerformed
+        // TODO add your handling code here:
+        Win1 c= new Win1();
+        c.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_Btn1ActionPerformed
 
     /**
      * @param args the command line arguments
