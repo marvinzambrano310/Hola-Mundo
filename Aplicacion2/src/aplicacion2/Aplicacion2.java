@@ -19,6 +19,11 @@ public class Aplicacion2 {
         //cambio realizado exitosamente
         //version 2.0
         //cambios de prueba
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Win1().setVisible(true);
+            }
+        });
     }
     
 }
