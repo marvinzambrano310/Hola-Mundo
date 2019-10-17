@@ -7,7 +7,7 @@ package aplicacion2;
 
 /**
  *
- * @author Estudiante
+ * @author Estudiante de fundamentos
  */
 public class Win1 extends javax.swing.JFrame {
 
